@@ -1,0 +1,31 @@
+{
+  "name": "basic-ts-algorithms",
+  "version": "0.0.1",
+  "description": "Library with a set of basic algorithms written using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sappharx/basic-ts-algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "typescript"
+  ],
+  "author": "Vincent Sisk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sappharx/basic-ts-algorithms/issues"
+  },
+  "homepage": "https://github.com/sappharx/basic-ts-algorithms#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.8.0",
+    "karma": "^0.13.3",
+    "karma-mocha": "^0.2.0",
+    "mocha": "^2.2.5",
+    "typescript": "^1.5.3"
+  }
+}
