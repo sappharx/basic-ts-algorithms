@@ -26,7 +26,9 @@ module.exports = function () {
             ],
             options: {
                 noImplicitAny: true,
-                out:           main
+                out:           main,
+                //outDir:        root,
+                target:        'es5' /* would like to change to es6 */
             }
         }
 

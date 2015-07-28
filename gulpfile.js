@@ -1,10 +1,11 @@
 ///<reference path="./typings/node/node.d.ts" />
 ///<reference path="./typings/gulp/gulp.d.ts" />
 
-var gulp   = require('gulp'),
-    config = require('./gulp.config')(),
-    args   = require('yargs').argv,
-    $      = require('gulp-load-plugins')({lazy: true});
+var gulp     = require('gulp'),
+    config   = require('./gulp.config')(),
+    args     = require('yargs').argv,
+    tsconfig = require('./tsconfig.json'),
+    $        = require('gulp-load-plugins')({lazy: true});
 
 gulp.task('default', ['help']);
 
@@ -12,8 +13,12 @@ gulp.task('help', $.taskListing);
 
 gulp.task('ts', function () {
 
+    log('compiling typescript files');
+
     return gulp.src(config.typescript.files)
+    //return gulp.src(tsconfig.compilerOptions.files)
         .pipe($.typescript(config.typescript.options))
+        //.pipe($.typescript(tsconfig.compilerOptions))
         .pipe(gulp.dest(config.root));
 });
 

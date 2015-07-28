@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "out": "index.js",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "files": [
+    "lib/inversions.ts"
+  ]
+}
